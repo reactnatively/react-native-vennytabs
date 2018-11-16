@@ -16,6 +16,8 @@ import SettingsScreen from 'app/views/screens/SettingsScreen';
 import SettingsAlreadyScreen from 'app/views/screens/SettingsAlreadyScreen';
 import SettingsAgainScreen from 'app/views/screens/SettingsAgainScreen';
 
+import BlankScreen from 'app/views/screens/BlankScreen';
+
 const HomeStack = createStackNavigator({ Home: HomeScreen, HomeAgain: HomeAgainScreen, HomeAlready: HomeAlreadyScreen, });
 HomeStack.navigationOptions = { tabBarLabel: 'Home', tabBarIcon: ({ focused }) => ( <TabBarIcon focused={focused} name={ Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}/>),};
 
@@ -25,9 +27,13 @@ LinksStack.navigationOptions = { tabBarLabel: 'Links', tabBarIcon: ({ focused })
 const SettingsStack = createStackNavigator({ Settings: SettingsScreen, SettingsAgain: SettingsAgainScreen, SettingsAlready: SettingsAlreadyScreen, });
 SettingsStack.navigationOptions = { tabBarLabel: 'Settings', tabBarIcon: ({ focused }) => ( <TabBarIcon focused={focused} name={ Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}/>),};
 
+const BlankStack = createStackNavigator({ Blank: BlankScreen });
+BlankStack.navigationOptions = { tabBarLabel: 'Blank', tabBarIcon: ({ focused }) => ( <TabBarIcon focused={focused} name={ Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}/>),};
+
 //
 export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
   SettingsStack,
+  BlankStack,
 });
