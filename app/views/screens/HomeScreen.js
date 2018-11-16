@@ -11,13 +11,15 @@ import {
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
-import { MonoText } from '../components/StyledText';
+import { MonoText } from 'app/controllers/components/StyledText';
 
-export default class HomeAgainScreen extends Component {
+export default class HomeScreen extends Component {
+
   static navigationOptions = {
-    title: 'Home Again',
+    title: 'Home',
   };
 
+  //
   render() {
     return (
       <View style={styles.container}>

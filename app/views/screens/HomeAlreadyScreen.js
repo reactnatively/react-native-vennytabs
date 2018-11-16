@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
-import { MonoText } from '../components/StyledText';
+import { MonoText } from 'app/controllers/components/StyledText';
 
 export default class HomeAlreadyScreen extends Component {
   static navigationOptions = {
