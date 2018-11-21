@@ -8,4 +8,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  wireframe: {
+    borderWidth: 1,
+    borderColor: '#ff0000',
+  },
 });
