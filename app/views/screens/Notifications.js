@@ -22,7 +22,7 @@ export default class Notifications extends Component {
       isLoading: true,
       ActivityIndicator_Loading: false,
       token: 'keys_qABC40UKdvWZN0DVt',
-      recipient: 'profile83838383',
+      recipient: 'profileGBsQ5RnSR',
       app: '83838383',
 
     }
@@ -48,9 +48,9 @@ export default class Notifications extends Component {
 
       <View
         style={{
-          height: .5,
-          width: "100%",
-          backgroundColor: "#000",
+          height: 0.5,
+          width: '100%',
+          backgroundColor: '#000000',
         }}
       />
 
@@ -61,7 +61,7 @@ export default class Notifications extends Component {
   //
   getNotifications = () => {
 
-    var api = 'http://localhost/www.venny.io/v3/notifications' +
+    var api = 'http://test.api.venny.io/v3/notifications' +
     '?' + 'token' + '=' + this.state.token +
     '&' + 'recipient' + '=' + this.state.recipient +
     '&' + 'app' + '=' + this.state.app;

@@ -70,7 +70,6 @@ ProfileStack.navigationOptions = { tabBarLabel: 'Profile', tabBarIcon: ({ focuse
 
 //
 export default createBottomTabNavigator({
-  WelcomeStack,
   ProfileStack,
   DiscoverStack,
   PrepareStack,

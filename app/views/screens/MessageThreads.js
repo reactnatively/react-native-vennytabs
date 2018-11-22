@@ -48,9 +48,9 @@ export default class Messages extends Component {
 
       <View
         style={{
-          height: .5,
-          width: "100%",
-          backgroundColor: "#000",
+          height: 0.5,
+          width: '100%',
+          backgroundColor: '#000000',
         }}
       />
 
@@ -97,7 +97,7 @@ export default class Messages extends Component {
 
       return (
 
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 
            <ActivityIndicator size="large" />
 
@@ -113,11 +113,11 @@ export default class Messages extends Component {
 
         <FlatList
 
-          data={ this.state.dataSource.results.threads }
+          data={this.state.dataSource.results.threads}
 
-          ItemSeparatorComponent = {this.FlatListItemSeparator}
+          ItemSeparatorComponent={this.FlatListItemSeparator}
 
-          renderItem={({item}) =>
+          renderItem={({ item }) =>
 
             <View>
 
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   MainContainer: {
 
     justifyContent: 'center',
-    flex:1,
+    flex: 1,
     margin: 5,
     marginTop: (Platform.OS === 'ios') ? 20 : 0,
 
@@ -158,18 +158,18 @@ const styles = StyleSheet.create({
   imageView: {
 
     width: '50%',
-    height: 100 ,
+    height: 100,
     margin: 7,
-    borderRadius : 7
+    borderRadius: 7
 
   },
 
   textView: {
 
-    width:'50%',
-    textAlignVertical:'center',
-    padding:10,
-    color: '#000'
+    width: '50%',
+    textAlignVertical: 'center',
+    padding: 10,
+    color: '#000000'
 
   }
 
